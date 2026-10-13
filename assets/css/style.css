@@ -282,8 +282,8 @@ h6 {
 }
 
 #contactUs:hover {
-  background: #fff;
-  color: #151515;
+  background: #d8a3ab;
+  color: #fff;
 }
 
 @media (max-width: 992px) {
@@ -586,6 +586,37 @@ section {
   transition: all ease-in-out 0.3s;
   z-index: 2;
   opacity: 0;
+}
+
+.portfolio .portfolio-wrap::after {
+  content: "";
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  width: 24%;
+  height: 20%;
+  max-height: 120px;
+  background: url("../images/info/mainLogo.png") center / contain no-repeat;
+  opacity: 0.55;
+  pointer-events: none;
+  z-index: 3;
+}
+
+#glightbox-body .gslide-media.gslide-image {
+  position: relative;
+}
+
+#glightbox-body .gslide-media.gslide-image::after {
+  content: "";
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  width: 24%;
+  height: 20%;
+  max-height: 120px;
+  background: url("../images/info/mainLogo.png") center / contain no-repeat;
+  opacity: 0.55;
+  pointer-events: none;
 }
 
 .portfolio .portfolio-wrap img {
